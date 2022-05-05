@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+
+
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
+    <!-- Default theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css" />
+    <!-- Semantic UI theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css" />
+    <!-- Bootstrap theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css" />
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <header id="header">
+            <div class="header">
+                <div class="logo">
+                    <img src="images/logo.svg" alt="" />
+                </div>
+                <div class="list">
+                    <ul>
+                        <li><a href="#" class="active">БАНК</a></li>
+                        <li><a href="#">БИЗНЕС</a></li>
+                        <li><a href="#">ИНВЕСТИЦИИ</a></li>
+                        <li><a href="#">СТРАХОВАНИЕ</a></li>
+                        <li><a href="#">МОБАЙЛ</a></li>
+                        <li><a href="#">ПУТЕШЕСТВИЯ</a></li>
+                        <li><a href="#">РАЗВЛЕЧЕНИЯ</a></li>
+                    </ul>
+                </div>
+                <button type="button">ВОЙТИ</button>
+            </div>
+        </header>
+        <main>
+            <div class="main">
+                <h1>Конвертер валют онлайн</h1>
+                <div class="content">
+                    <div class="left">
+                        <p class="ch">У меня есть</p>
+                        <div class="change-buttons" id="firstCurrency">
+                            <button class="purple">RUB</button>
+                            <button>USD</button>
+                            <button>EUR</button>
+                            <button>GBP</button>
+                        </div>
+                        <div class="value-div">
+                            <input type="text" name="" id="amount" class="money" />
+                            <p class="one" id="outputFirst"></p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <p class="ch">Хочу приобрести</p>
+                        <div class="change-buttons" id="secondCurrency">
+                            <button>RUB</button>
+                            <button class="purple">USD</button>
+                            <button>EUR</button>
+                            <button>GBP</button>
+                        </div>
+                        <div class="value-div">
+                            <input type="text" name="" id="outputResult" class="money" readonly />
+                            <p class="one" id="outputSecond"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+    </div>
+    <script src="ui.js"></script>
+    <script src="currency.js"></script>
+    <script src="app.js"></script>
+
+
+    <!-- JavaScript -->
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
+</body>
+
+</html>
