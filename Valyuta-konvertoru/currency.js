@@ -8,7 +8,6 @@ class Currency {
     this.outputSecond = document.getElementById("outputSecond");
   }
   exchange() {
-    //  https://api.exchangerate.host/latest?base=USD&symbols=RUB
     return new Promise((resolve, reject) => {
       fetch(this.url + this.firstCurrency + "&symbols=" + this.secondCurrency)
         .then((res) => {
@@ -50,6 +49,3 @@ amountElement.value=""
     this.secondCurrency = newSecondCurrency;
   }
 }
-
-
-
